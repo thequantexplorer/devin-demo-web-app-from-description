@@ -27,7 +27,7 @@ Start a new Devin session at [app.devin.ai](https://app.devin.ai) and paste this
 ```text
 Build a team PTO (time off) tracker in https://github.com/<you>/devin-demo-web-app-from-description. The repo is a near-empty Vite + React app. Read README.md first and follow its rules.
 
-Follow the design skill in .agents/skills/design/SKILL.md. The result should look like a finished, polished product, not a default template.
+Follow the repo's design skill. The result should look like a finished, polished product.
 
 The app should do this:
 1. A form to add a time-off request: person's name, start date, end date, and an optional note. If the name is empty or the end date is before the start date, show an error and don't save it.
