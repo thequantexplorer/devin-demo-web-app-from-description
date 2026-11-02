@@ -2,7 +2,9 @@
 
 A small web app for a team to track time off (PTO). It is built with [Vite](https://vite.dev) and [React](https://react.dev).
 
-The app is not built yet. Right now it only shows a heading, and there are no tests.
+Add a time-off request (name, start date, end date, optional note), approve or deny pending requests, and see approved time off grouped by month. Data is saved in `localStorage`.
+
+Date logic lives in `src/dates.js` and storage logic in `src/storage.js`; tests are in `src/__tests__/`.
 
 ## Commands
 
