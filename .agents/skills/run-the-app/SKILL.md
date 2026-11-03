@@ -1,9 +1,17 @@
 ---
 name: run-the-app
-description: Install, run and test the Team PTO app, and check it in the browser before opening or updating a pull request.
+description: Set up, run and test the Team PTO web app, and check it in the browser before opening or updating a pull request.
 ---
 
-## Setup
+## Stack
+
+- Vite + React, plain JavaScript (`npm create vite@latest . -- --template react`, then remove the demo content).
+- Frontend only. There is no server. Save data in the browser with `localStorage`.
+- Plain React and CSS. Do not add other runtime dependencies.
+- Tests: Vitest with jsdom and Testing Library (`vitest`, `jsdom`, `@testing-library/react`, `@testing-library/jest-dom` as dev dependencies). `npm test` runs `vitest run`.
+- Put date and storage logic in small functions under `src/` so they can be tested on their own.
+
+## Run
 
 1. Run `npm install`.
 2. Run `npm run dev`. Wait for `Local: http://localhost:5173/`.
